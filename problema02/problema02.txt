@@ -1,0 +1,37 @@
+1_ Inicio
+2_ funcion principal
+3_ 	nota1, d[0, n]
+4_	nota2, d[0, n]
+5_ 	nota3, d[0, n]
+6_	nota4, d[0, n]
+7_ 	promedio, x(200)[{1-9},{a-z},{A-Z}, {/}]
+7_	Escribir "Ingrese la primera nota"
+8_ 	Leer nota1
+9_	Escribir "Ingrese la segunda nota"
+10_ 	Leer nota2
+11_	Escribir "Ingrese la tecer nota"
+12_ 	Leer nota3
+13_	Escribir "Ingrese la cuarta nota"
+14_ 	Leer nota4
+15_	promedio = funcion obtenerPromedio(nota1, nota2, nota3, 		nota4)
+16_	Escribir promedio
+17_ fin funcion principal
+18_ funcion obtenerPromedio(a, d; b, d; c, d; d, d)
+19_ 	suma, d[0, n]
+20_	pro, x(200)[{1-9},{a-z},{A-Z}, {/}]
+21_	suma = (a + b + c + d)/4
+22_	Si suma >= 0 AND suma <= 5 entonces
+23_		pro = "El promedio de las notas: "+ a " "+ b " "+c 		" "+d "es Regular"
+24_	De lo contario
+25_	Si suma >= 5.1 AND suma <= 8 entonces
+26_		pro = "El promedio de las notas: "+ a " "+ b " "+c 		" "+d "es Bueno"
+27_	De lo contario
+28_	Si suma >= 8.1 AND suma <= 9 entonces
+29_		pro = "El promedio de las notas: "+ a " "+ b " "+c 		" "+d "es Muy Bueno"
+30_	De lo contrario
+31_	Si suma >= 9.1 AND suma <= 10 entonces
+32_		pro = "El promedio de las notas: "+ a " "+ b " "+c 		" "+d "es Sobresaliente"
+33_	Fin si
+34_	return pro
+35_ Fin funcion obtenerPromedio
+36_ Fin
