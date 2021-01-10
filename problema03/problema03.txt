@@ -1,0 +1,41 @@
+1. Inicio
+2. funcion principal()
+3. 	opcion, i[0,n]
+4. 	nombreC, x(200)[{a-z}, {A-Z} , {BS}]
+5. 	cédulaC, x(20)[{0-9}]
+6. 	Escribir "Ingrese su nombre y apellido"
+7. 	Leer nombreC
+8. 	Escribir "Ingrese su número de cédula"
+9. 	Leer cédulaC
+10. 	Escribir "Ingrese el número '1' para calcular el valor de la planilla de luz o 
+	 el número '2' para  calcular el predio de un bien inmueble"
+11. 	Si (opcion == 1) entonces
+12.	calcularValorLuz(nombreC, cédulaC)
+13. 	De lo contrario
+14.	si (opcion == 2) entonces
+15.		calcularPredio(nombreC, cédulaC)
+16.	De lo contrario
+17.		Escribir "La opción es incorrecto"
+18. Fin si
+19. Fin funcion Principal
+20. funcion calcularValorLuz(cliente, x(20); nCédula, x(20))
+21. 	valorK, d[0,n]
+22. 	numeroK, d[0,n]
+23. 	valorp, d[0,n]
+24. 	Escribir "Ingresar el valor de kilowatio"
+25. 	Leer valorK
+26.	Escribir "Ingresar el número de kilowatios consumidos"
+27. 	Leer numeroK
+28. 	valorp <-- valorK * numeroK
+29. 	Escribir "Cliente:" +  cliente + "con cédula:" + nCédula + "debe cancelar el valor de $" + valorp
+30. Fin funcion calcularValorLuz 
+31. funcion calcularPredio(x, x(20); y, x(20))
+32. 	valorIn, d[0,n]
+33. 	tpredio, d[0,n]
+34. 	Escribir "Ingresar el valor del inmueble"
+35. 	Leer valorIn
+36. 	tpredio <-- (valorIn * 2)/100
+37. 	Escribir "Cliente:" + x + "con cédula:" + y + "Tiene un bien inmueble valorado en $" + valorIn +
+	+ " y tiene que pagar de predio: $" + tpredio
+38. Fin funcion calcularPredio
+39. Fin
